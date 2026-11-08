@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Nook Widgets · Privacy Policy</title>
-<meta name="description" content="What Nook Widgets does with your information: no account, widgets on your device, optional live weather.">
+<meta name="description" content="What Nook Widgets does with your information: no account, widgets on your device, optional weather and AI features.">
 <link rel="icon" href="icon.png">
 <script src="theme.js"></script>
 <link rel="stylesheet" href="style.css">
@@ -25,13 +25,14 @@
 
     <p class="lead">Nook Widgets is a home screen widget app for Android and iOS made by Aral Benli ("we"). This policy explains what the app does with your information.</p>
 
-    <div class="callout"><strong>In short:</strong> there is no account and your widgets stay on your device. We collect anonymous usage statistics and crash reports. Your approximate location is used only if you turn on live weather. There are no third-party ads.</div>
+    <div class="callout"><strong>In short:</strong> there is no account and your widgets stay on your device. We collect anonymous usage statistics and crash reports. Your approximate location and a photo are used only if you turn on live weather or create an AI widget. There are no third-party ads.</div>
 
     <ul class="glance">
       <li><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/><path d="M3 3l18 18"/></svg><b>Account</b><span>None</span></li>
       <li><svg viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg><b>Widgets &amp; photos</b><span>On your device</span></li>
       <li><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg><b>Usage statistics</b><span>Anonymous</span></li>
       <li><svg viewBox="0 0 24 24"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><b>Location</b><span>Approximate, only if you turn on weather</span></li>
+      <li><svg viewBox="0 0 24 24"><path d="M12 3l2 5 5 2-5 2-2 5-2-5-5-2 5-2z"/></svg><b>AI widgets</b><span>Only if you create one</span></li>
       <li><svg viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg><b>Payments</b><span>App Store / Google Play</span></li>
     </ul>
 
@@ -41,6 +42,7 @@
       <ul>
         <li>your widget choices and clock style settings;</li>
         <li>widgets you make from your own photos, including the photo they were made from;</li>
+        <li>the finished images of your AI widgets;</li>
         <li>your rounded location, if live weather is on.</li>
       </ul>
       <p>Uninstalling the app deletes them.</p>
@@ -68,13 +70,29 @@
     </section>
 
     <section class="card">
+      <h2>Create with AI (optional, one-off purchase)</h2>
+      <p>When you create a widget with AI, the <b>description</b> you type and/or the <b>photo</b> you pick, your anonymous RevenueCat user ID and the purchase transaction ID are sent to our server (Google Cloud / Firebase Functions, Europe) and to the Google Gemini API, which draws the image. Before that, Firebase App Check (Google Play Integrity / Apple App Attest) confirms the request comes from the genuine app, to prevent abuse.</p>
+      <ul>
+        <li>The photo is <b>not stored</b>.</li>
+        <li>To make each purchase usable only once, we keep a purchase record with your description, the chosen style, whether a photo was used and your RevenueCat user ID. It is deleted automatically after 12 months, or earlier on request.</li>
+        <li>Short-lived usage-limit records are deleted automatically.</li>
+        <li>Gemini's safety filters block harmful images.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Reporting an AI widget</h2>
+      <p>If an AI widget looks offensive or wrong, tap <b>Report</b> on it and pick a reason. The report is sent from inside the app to our support server (feedback.aralbenli.com, Cloudflare), which emails it to us. It contains the widget's name, the reason, your optional note, the details listed under Feedback below, and your country, worked out from your IP address. If it can't be sent, your email app opens with the same report.</p>
+    </section>
+
+    <section class="card">
       <h2>Feedback</h2>
       <p>If you request a feature or report a bug, your own email app opens with a message to us. To help us answer, it includes your RevenueCat ID, a device identifier (Android ID / iOS identifier for vendor), platform and operating system version, device model, app version, Premium status and language. You can see and remove these lines before sending. We use this only to answer you.</p>
     </section>
 
     <section class="card">
       <h2>Purchases</h2>
-      <p>Premium subscriptions and the lifetime purchase are processed by Google Play or the App Store. RevenueCat receives an anonymous app user ID and your purchase history to unlock Premium. We never see your payment details.</p>
+      <p>Premium subscriptions, the lifetime purchase and the one-off AI widget purchase are processed by Google Play or the App Store. RevenueCat receives an anonymous app user ID and your purchase history to unlock Premium and check AI widget purchases. We never see your payment details.</p>
     </section>
 
     <section class="card">
@@ -86,22 +104,23 @@
       <h2>Service providers</h2>
       <p>These companies process data for us only for the purposes above, under their own policies:</p>
       <ul>
-        <li>Google: Firebase Analytics, Crashlytics, Remote Config (<a href="https://policies.google.com/privacy">privacy policy</a>)</li>
+        <li>Google: Firebase Analytics, Crashlytics, Remote Config, App Check, Cloud Functions, Firestore, Gemini API, Play Integrity (<a href="https://policies.google.com/privacy">privacy policy</a>)</li>
         <li>RevenueCat (<a href="https://www.revenuecat.com/privacy">privacy policy</a>)</li>
+        <li>Cloudflare, report delivery (<a href="https://www.cloudflare.com/privacypolicy/">privacy policy</a>)</li>
         <li>MET Norway, weather (<a href="https://api.met.no/doc/TermsOfService">terms</a>)</li>
-        <li>Apple: App Store (<a href="https://www.apple.com/legal/privacy/">privacy policy</a>)</li>
+        <li>Apple: App Store, App Attest (<a href="https://www.apple.com/legal/privacy/">privacy policy</a>)</li>
       </ul>
       <p>We do not sell your data. All data is sent over encrypted connections.</p>
     </section>
 
     <section class="card">
       <h2>Retention</h2>
-      <p>Analytics data is kept for up to 14 months and crash reports for up to 90 days. Feedback is kept only as long as we need it to answer you.</p>
+      <p>Analytics data is kept for up to 14 months, crash reports for up to 90 days and AI widget purchase records for 12 months. Feedback and reports are kept only as long as we need them to answer you.</p>
     </section>
 
     <section class="card">
       <h2>Your rights</h2>
-      <p>Depending on where you live (for example under the GDPR), you can ask to access, correct or delete your data, or object to its use. Write to <a href="mailto:support@aralbenli.com">support@aralbenli.com</a>. Because there is no account, include the approximate date you used the app and, if you can, your RevenueCat ID from a feedback mail. You can also turn off live weather, or uninstall the app to stop all collection.</p>
+      <p>Depending on where you live (for example under the GDPR), you can ask to access, correct or delete your data, or object to its use. Write to <a href="mailto:support@aralbenli.com">support@aralbenli.com</a>. Because there is no account, include the approximate date you used the app and, if you can, your RevenueCat ID from a feedback mail. You can also turn off live weather, avoid the AI feature, or uninstall the app to stop all collection.</p>
     </section>
 
     <section class="card">
@@ -131,13 +150,14 @@
 
     <p class="lead">Nook Widgets, Aral Benli'nin ("biz") Android ve iOS için geliştirdiği bir ana ekran widget uygulamasıdır. Bu politika, uygulamanın bilgilerinizle ne yaptığını anlatır.</p>
 
-    <div class="callout"><strong>Kısaca:</strong> hesap yoktur ve widget'larınız cihazınızda kalır. Anonim kullanım istatistikleri ve çökme raporları toplarız. Yaklaşık konumunuz yalnızca canlı havayı açarsanız kullanılır. Üçüncü taraf reklam yoktur.</div>
+    <div class="callout"><strong>Kısaca:</strong> hesap yoktur ve widget'larınız cihazınızda kalır. Anonim kullanım istatistikleri ve çökme raporları toplarız. Yaklaşık konumunuz ve bir fotoğraf yalnızca canlı havayı açarsanız ya da bir AI widget'ı oluşturursanız kullanılır. Üçüncü taraf reklam yoktur.</div>
 
     <ul class="glance">
       <li><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/><path d="M3 3l18 18"/></svg><b>Hesap</b><span>Yok</span></li>
       <li><svg viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="3"/><path d="M11 18h2"/></svg><b>Widget'lar ve fotoğraflar</b><span>Cihazınızda</span></li>
       <li><svg viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg><b>Kullanım istatistikleri</b><span>Anonim</span></li>
       <li><svg viewBox="0 0 24 24"><path d="M12 21s-7-6-7-11a7 7 0 0 1 14 0c0 5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><b>Konum</b><span>Yaklaşık, yalnızca hava açıksa</span></li>
+      <li><svg viewBox="0 0 24 24"><path d="M12 3l2 5 5 2-5 2-2 5-2-5-5-2 5-2z"/></svg><b>AI widget'ları</b><span>Yalnızca oluşturursanız</span></li>
       <li><svg viewBox="0 0 24 24"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg><b>Ödemeler</b><span>App Store / Google Play</span></li>
     </ul>
 
@@ -147,6 +167,7 @@
       <ul>
         <li>widget seçimleriniz ve saat stili ayarlarınız;</li>
         <li>kendi fotoğraflarınızdan yaptığınız widget'lar ve yapıldıkları fotoğraf;</li>
+        <li>AI widget'larınızın bitmiş görselleri;</li>
         <li>canlı hava açıksa yuvarlanmış konumunuz.</li>
       </ul>
       <p>Uygulamayı kaldırmak bunları siler.</p>
@@ -174,13 +195,29 @@
     </section>
 
     <section class="card">
+      <h2>AI ile oluştur (isteğe bağlı, tek seferlik satın alma)</h2>
+      <p>AI ile widget oluşturduğunuzda yazdığınız <b>açıklama</b> ve/veya seçtiğiniz <b>fotoğraf</b>, anonim RevenueCat kullanıcı kimliğiniz ve satın alma işlem kimliği sunucumuza (Google Cloud / Firebase Functions, Avrupa) ve görseli çizen Google Gemini API'ye gönderilir. Bundan önce Firebase App Check (Google Play Integrity / Apple App Attest), kötüye kullanımı önlemek için isteğin gerçek uygulamadan geldiğini doğrular.</p>
+      <ul>
+        <li>Fotoğraf <b>saklanmaz</b>.</li>
+        <li>Her satın almanın yalnızca bir kez kullanılabilmesi için açıklamanızı, seçilen stili, fotoğraf kullanılıp kullanılmadığını ve RevenueCat kimliğinizi içeren bir satın alma kaydı tutarız. 12 ay sonra otomatik olarak, talep ederseniz daha önce silinir.</li>
+        <li>Kısa ömürlü kullanım limiti kayıtları otomatik olarak silinir.</li>
+        <li>Gemini'nin güvenlik filtreleri zararlı görselleri engeller.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>AI widget'ını bildirme</h2>
+      <p>Bir AI widget'ı rahatsız edici ya da hatalı görünüyorsa üzerindeki <b>Bildir</b>'e dokunup bir sebep seçin. Bildirim uygulamanın içinden destek sunucumuza (feedback.aralbenli.com, Cloudflare) gönderilir ve bize e-postayla iletilir. Widget'ın adını, sebebi, isteğe bağlı notunuzu, aşağıda Geri bildirim bölümünde sayılan bilgileri ve IP adresinizden çıkarılan ülkenizi içerir. Gönderilemezse aynı bildirimle e-posta uygulamanız açılır.</p>
+    </section>
+
+    <section class="card">
       <h2>Geri bildirim</h2>
       <p>Bir özellik ister veya hata bildirirseniz kendi e-posta uygulamanız bize yazılmış bir mesajla açılır. Yanıt verebilmemiz için mesaja RevenueCat kimliğiniz, bir cihaz kimliği (Android ID / iOS identifier for vendor), platform ve işletim sistemi sürümü, cihaz modeli, uygulama sürümü, Premium durumu ve dil eklenir. Bu satırları göndermeden önce görebilir ve silebilirsiniz. Bunları yalnızca size yanıt vermek için kullanırız.</p>
     </section>
 
     <section class="card">
       <h2>Satın almalar</h2>
-      <p>Premium abonelikleri ve ömür boyu satın alma Google Play veya App Store üzerinden yapılır. RevenueCat, Premium'u açmak için anonim bir kullanıcı kimliği ve satın alma geçmişinizi alır. Ödeme bilgilerinizi hiçbir zaman görmeyiz.</p>
+      <p>Premium abonelikleri, ömür boyu satın alma ve tek seferlik AI widget satın alması Google Play veya App Store üzerinden yapılır. RevenueCat, Premium'u açmak ve AI widget satın almalarını doğrulamak için anonim bir kullanıcı kimliği ve satın alma geçmişinizi alır. Ödeme bilgilerinizi hiçbir zaman görmeyiz.</p>
     </section>
 
     <section class="card">
@@ -192,22 +229,23 @@
       <h2>Hizmet sağlayıcılar</h2>
       <p>Bu şirketler verileri yalnızca yukarıdaki amaçlar için, kendi politikaları kapsamında bizim adımıza işler:</p>
       <ul>
-        <li>Google: Firebase Analytics, Crashlytics, Remote Config (<a href="https://policies.google.com/privacy">gizlilik politikası</a>)</li>
+        <li>Google: Firebase Analytics, Crashlytics, Remote Config, App Check, Cloud Functions, Firestore, Gemini API, Play Integrity (<a href="https://policies.google.com/privacy">gizlilik politikası</a>)</li>
         <li>RevenueCat (<a href="https://www.revenuecat.com/privacy">gizlilik politikası</a>)</li>
+        <li>Cloudflare, bildirim iletimi (<a href="https://www.cloudflare.com/privacypolicy/">gizlilik politikası</a>)</li>
         <li>MET Norway, hava durumu (<a href="https://api.met.no/doc/TermsOfService">şartlar</a>)</li>
-        <li>Apple: App Store (<a href="https://www.apple.com/legal/privacy/">gizlilik politikası</a>)</li>
+        <li>Apple: App Store, App Attest (<a href="https://www.apple.com/legal/privacy/">gizlilik politikası</a>)</li>
       </ul>
       <p>Verilerinizi satmayız. Tüm veriler şifreli bağlantılar üzerinden gönderilir.</p>
     </section>
 
     <section class="card">
       <h2>Saklama süresi</h2>
-      <p>İstatistikler en fazla 14 ay, çökme raporları en fazla 90 gün saklanır. Geri bildirimler yalnızca size yanıt vermek için gerektiği sürece saklanır.</p>
+      <p>İstatistikler en fazla 14 ay, çökme raporları en fazla 90 gün, AI widget satın alma kayıtları 12 ay saklanır. Geri bildirimler ve bildirimler yalnızca size yanıt vermek için gerektiği sürece saklanır.</p>
     </section>
 
     <section class="card">
       <h2>Haklarınız</h2>
-      <p>Yaşadığınız yere bağlı olarak (örneğin GDPR veya KVKK kapsamında) verilerinize erişmeyi, düzeltilmesini veya silinmesini isteyebilir ya da kullanılmasına itiraz edebilirsiniz. <a href="mailto:support@aralbenli.com">support@aralbenli.com</a> adresine yazın. Hesap olmadığı için uygulamayı kullandığınız yaklaşık tarihi ve mümkünse geri bildirim e-postasındaki RevenueCat kimliğinizi belirtin. Canlı havayı kapatarak veya uygulamayı kaldırarak veri toplamayı durdurabilirsiniz.</p>
+      <p>Yaşadığınız yere bağlı olarak (örneğin GDPR veya KVKK kapsamında) verilerinize erişmeyi, düzeltilmesini veya silinmesini isteyebilir ya da kullanılmasına itiraz edebilirsiniz. <a href="mailto:support@aralbenli.com">support@aralbenli.com</a> adresine yazın. Hesap olmadığı için uygulamayı kullandığınız yaklaşık tarihi ve mümkünse geri bildirim e-postasındaki RevenueCat kimliğinizi belirtin. Canlı havayı kapatarak, AI özelliğini kullanmayarak veya uygulamayı kaldırarak veri toplamayı durdurabilirsiniz.</p>
     </section>
 
     <section class="card">
